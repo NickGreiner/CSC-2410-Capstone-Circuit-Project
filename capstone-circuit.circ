@@ -58,6 +58,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
+    <comp loc="(360,260)" name="1bit_ALU"/>
   </circuit>
   <circuit name="Logical Unit">
     <a name="circuit" val="Logical Unit"/>
@@ -337,11 +338,27 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="inputs" val="2"/>
     </comp>
   </circuit>
-  <circuit name="ALU">
-    <a name="circuit" val="ALU"/>
+  <circuit name="1bit_ALU">
+    <a name="circuit" val="1bit_ALU"/>
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <path d="M61,51 Q65,61 69,51" fill="none" stroke="#808080" stroke-width="2"/>
+      <rect fill="none" height="184" stroke="#000000" stroke-width="2" width="221" x="50" y="49"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="162" y="141">1 Bit ALU</text>
+      <circ-port height="8" pin="250,50" width="8" x="46" y="56"/>
+      <circ-port height="8" pin="180,80" width="8" x="46" y="76"/>
+      <circ-port height="8" pin="180,110" width="8" x="46" y="96"/>
+      <circ-port height="8" pin="180,150" width="8" x="46" y="116"/>
+      <circ-port height="8" pin="180,180" width="8" x="46" y="136"/>
+      <circ-port height="8" pin="320,320" width="8" x="46" y="196"/>
+      <circ-port height="8" pin="320,350" width="8" x="46" y="216"/>
+      <circ-port height="10" pin="800,150" width="10" x="265" y="105"/>
+      <circ-port height="10" pin="600,400" width="10" x="165" y="225"/>
+      <circ-port height="8" pin="610,90" width="8" x="166" y="46"/>
+      <circ-anchor facing="east" height="6" width="6" x="267" y="107"/>
+    </appear>
     <wire from="(440,180)" to="(440,250)"/>
     <wire from="(700,120)" to="(700,130)"/>
     <wire from="(340,340)" to="(400,340)"/>
